@@ -1,0 +1,28 @@
+.recommendContainer .submitContainer
+{
+    border-radius: 4px;
+    padding:3px;
+    text-align: right;
+}
+
+.submitContainer .btn
+{
+    margin:3px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.submitContainer .btn:hover
+{
+    cursor: pointer;
+}
+
+.submitContainer .btn-primary:hover
+{
+    background-color: blue;
+}
+
+.submitContainer .btn-secondary:hover
+{
+    background-color: black;
+}

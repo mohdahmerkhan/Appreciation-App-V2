@@ -1,0 +1,126 @@
+.whoContainer
+{
+    border: 1px solid rgba(211, 211, 211, 0.525);
+    border-radius: 4px;
+    padding:3px;
+    padding-bottom:30px;
+    margin:6px auto;
+    border:1px solid rgba(128, 128, 128, 0.21);
+    padding: 6px auto;
+    border-radius: 4px;
+    min-height: 200px;
+}
+
+.whoContainer .form-group
+{
+    margin: 9px auto;
+    width:90%;
+    position: relative;
+}
+
+
+.whoContainer .selectedName
+{
+    display: inline-block;
+    background-color: rgba(128, 128, 128, 0.088);
+    margin: 3px;
+    font-weight: bold;
+    color: rgb(79, 77, 77);
+    font-size: 14px;
+    padding:6px;
+    border-radius: 4px;
+    /* display: none; */
+}
+
+
+.whoContainer .removeSelect
+{
+    color: rgba(128, 128, 128, 0.459);
+    display: inline-block;
+    padding:1px 6px;
+    border-radius: 50%;
+}
+
+.whoContainer .removeSelect:hover
+{
+    color: whitesmoke;
+    background-color: darkgrey;
+    cursor: pointer;
+}
+
+.whoContainer label
+{
+    color: grey;
+    font-weight: 450;
+    font-size: 19px;
+    margin-bottom: 9px;
+}
+
+.whoContainer input
+{
+    border-radius: 4px;
+}
+
+
+.staffContainer, .ccToContainer
+{
+    position: relative;
+    /* background-color: red; */
+}
+
+.whoContainer .hiddenDiv
+{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    max-height: 200px;
+    overflow-y: scroll;
+    padding-top: 9px;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.37);
+    border-top: none;
+}
+
+.whoContainer .option
+{
+    /* background-color: red; */
+    margin: 1px;
+    padding: 1px 0px 1px 9px ;
+}
+
+.whoContainer .option:hover
+{
+    background-color: rgb(38, 145, 251);
+    color: white;
+}
+
+
+.whoContainer .ccToName
+{
+    display: inline-block;
+    background-color: rgba(128, 128, 128, 0.088);
+    margin: 3px;
+    color: grey;
+    font-size: 14px;
+    padding:0px 9px;
+    padding-right: 3px;
+    border-radius: 19px;
+}
+
+.whoContainer .removeCcTo
+{
+    color: rgba(62, 59, 59, 0.632);
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    padding:1px 6px;
+    margin: 3px;
+    border-radius: 50%;
+}
+
+.whoContainer  .removeCcTo:hover
+{
+    color: whitesmoke;
+    background-color: maroon;
+    cursor: pointer;
+}

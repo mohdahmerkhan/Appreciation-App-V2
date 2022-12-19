@@ -1,0 +1,150 @@
+
+#mainContainer {
+    background-color: black;
+    border-radius: 0px;
+    padding: 0px;
+    margin: 0 auto;
+    height: 583px;
+    width: 842px;
+}
+.mainContainer {
+    padding:3px;
+    margin: 3px;
+    border-radius: 6px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+    margin: 0 auto;
+    padding: 3%;
+    background-image: linear-gradient(to right, gold, whitesmoke, white, whitesmoke, white, gold);
+    border-radius: 0px;
+    border-bottom-right-radius: 14%;
+    border-bottom-left-radius: 14%;
+    max-width: 100%;
+}
+.subContainer
+{
+    padding:3px;
+    margin: 3px;
+    border-radius: 6px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border: 13px double goldenrod;
+    border-bottom: none;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.certNo
+{
+    padding:3px;
+    margin: 3px;
+    border-radius: 6px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: left;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.logo {
+    padding:3px;
+    margin: 3px;
+    border-radius: 6px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    /* padding: 0% 5%; */
+    width: 42%;
+    margin: 0 auto;
+}
+
+.logo img {
+    padding:3px;
+    margin: 3px;
+    border-radius: 6px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    width: 100%;
+    background-color: rgba(245, 245, 245, 0.374);    
+}
+
+#mainContainer h2 {
+    padding:3px;
+    margin: 3px;
+    border-radius: 6px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.name {
+    padding:3px;
+    margin: 3px;
+    border-radius: 6px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-size: 30px;
+}
+
+.signDate {
+    padding:3px;
+    margin: 3px;
+    border-radius: 6px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    /* background-color: rebeccapurple; */
+    padding-top: 4%;
+}
+
+.signDate div {
+    padding:3px;
+    margin: 3px;
+    border-radius: 6px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    width: 42%;
+}
+
+.signDate div div {
+    padding:3px;
+    margin: 3px;
+    border-radius: 6px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    width: 180px;
+    border-radius: 0px;
+    border-bottom: 1px solid rgba(218, 165, 32, 0.295);
+}
+
+
+.downloadBtn
+{
+    float:right;
+    border-radius: 3px;
+    padding: 6px;
+    margin-right: 20%;
+    font-weight: bold;
+    color: gray;
+    background-color: whitesmoke;
+    border: 1px solid rgba(128, 128, 128, 0.713);
+}
+
+.downloadBtn:hover
+{
+    color:whitesmoke;
+    background-color:  gray;
+}

@@ -1,0 +1,51 @@
+
+.tagContainer
+{
+    border: 1px solid rgba(211, 211, 211, 0.525);
+    border-radius: 4px;
+    margin:6px auto;
+    border:1px solid rgba(128, 128, 128, 0.21);
+    padding: 6px auto;
+    border-radius: 4px;
+    min-height: 200px;
+}
+
+.tagContainer .form-group
+{
+    margin: 9px auto;
+    width:90%;
+    position: relative;
+}
+
+
+.tagContainer label
+{
+    color: grey;
+    font-weight: 450;
+    font-size: 19px;
+    margin-bottom: 9px;
+}
+
+.tagListContainer .tag
+{
+    background-color: rgba(128, 128, 128, 0.134);
+    color:rgb(123, 118, 118);
+    font-size: 15px;
+    font-weight: 400;
+    padding: 9px;
+    margin: 2px;
+    border-radius: 4px;
+}
+
+.tagListContainer .tag:hover
+{
+    background-color: rgba(128, 128, 128, 0.311);
+    color:black;
+    cursor: pointer;
+}
+
+.tagListContainer .selectedTag
+{
+    background-color: rgba(128, 128, 128, 0.311);
+    color:black;
+}

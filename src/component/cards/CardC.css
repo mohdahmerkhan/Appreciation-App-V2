@@ -1,0 +1,60 @@
+/* * {
+    margin: 20px auto;
+} */
+
+.cardCContainer {
+    margin: 20px auto;
+    background-image: radial-gradient(whitesmoke, rgba(255, 255, 0, 0.451));
+    text-align: center;
+    font-family: sans-serif;
+    margin: 0 auto;
+    padding: 3px 1%;
+    max-width: 800px;
+}
+
+.cardCContainer .logo {
+    margin: 19px auto;
+    max-width: 160px;
+}
+
+.cardCContainer .logo img {
+    width: 100%;
+    background-color: transparent;
+}
+
+.cardCContainer .title {
+    font-size: 200%;
+    line-height: 90%;
+    word-spacing: 6px;
+    text-shadow: 1px 1px black;
+    padding: 1%;
+    margin: 6% auto;
+}
+
+.cardCContainer .greenBold {
+    color: green;
+    text-shadow: 3px 3px black;
+    font-weight: bolder;
+    display: inline-block;
+    margin: 1%;
+}
+
+.cardCContainer .content {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 19px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cardCContainer .recipientAndSender {
+    font-size: 30px;
+    margin: 19px auto;
+    font-weight: bold;
+    color: darkslategrey;
+}
+
+
+.cardCContainer .thankNotes {
+    font-size: 50%;
+    margin: 90px auto 30px auto;
+}
