@@ -1,14 +1,24 @@
-import React from "react"
+import React, { useContext, useEffect } from "react"
 import { Link } from "react-router-dom";
+import { NavContext } from "../Header";
 
-function NavItem({ title, to, className }) {
+function NavItem({ title, to}) {
+
+    // console.log("NavItem");
+
+    let extraClassName = "";
+    const {selectedNav, setSelectedNav} = useContext(NavContext);
+
+    if(selectedNav == to)
+    {
+        extraClassName = "selectedNavItem";
+    }
+
     return (
         <Link to={to}>
-            <button className={"mx-1 btn " + className}>
-                <b>
-                    {title}
-                </b>
-            </button>
+            <div className={"navItem " + extraClassName} onClick={ ()=> setSelectedNav(title)}>
+                {title}
+            </div>
         </Link>
     );
 }

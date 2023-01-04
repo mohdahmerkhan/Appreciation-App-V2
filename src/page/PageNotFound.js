@@ -1,6 +1,9 @@
 import React from "react";
 
 function PageNotFound() {
+
+    // console.log("Page Not Found");
+    
     return (
         <div className="content card my-5">
             <div className="text-center">

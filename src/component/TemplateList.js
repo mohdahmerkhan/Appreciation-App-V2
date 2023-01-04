@@ -9,6 +9,7 @@ import { RecommendErrorContext } from "../page/RecommendForm";
 
 function TemplateList({ template, setTemplate, error }) {
 
+    // console.log("TemplateList");
     const [templateList, setTemplateList] = useState([]);
     const { isSubmit } = useContext(RecommendErrorContext);
 

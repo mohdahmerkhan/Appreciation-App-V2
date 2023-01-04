@@ -7,6 +7,7 @@
     background-image: radial-gradient(whitesmoke, rgba(255, 255, 0, 0.451));
     text-align: center;
     font-family: sans-serif;
+    color:darkslategrey;
     margin: 0 auto;
     padding: 3px 1%;
     max-width: 800px;
@@ -20,6 +21,7 @@
 .cardCContainer .logo img {
     width: 100%;
     background-color: transparent;
+    border: none;
 }
 
 .cardCContainer .title {

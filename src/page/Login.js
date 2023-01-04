@@ -5,6 +5,7 @@ import { UserContext } from "../component/App";
 import { Navigate } from "react-router-dom";
 
 function Login() {
+    // console.log("Login");
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");

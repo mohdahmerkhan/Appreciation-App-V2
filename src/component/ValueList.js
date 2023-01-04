@@ -5,6 +5,7 @@ import { apiURL } from "../config";
 import { RecommendErrorContext } from "../page/RecommendForm";
 
 function ValueList({ values, setValues , error }) {
+    // console.log("ValueList");
     const [tagList, setTagList] = useState([]);
     const { isSubmit } = useContext(RecommendErrorContext);
 

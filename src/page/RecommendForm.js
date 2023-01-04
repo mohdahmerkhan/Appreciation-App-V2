@@ -11,6 +11,8 @@ import { Navigate } from "react-router-dom";
 export const RecommendErrorContext = createContext();
 
 function RecommendForm() {
+    // console.log("Recommend Form");
+    const {user} = useContext(UserContext);
 
     const [staff, setStaff] = useState(null);
     const [ccTo, setCcTo] = useState([]);
@@ -18,7 +20,15 @@ function RecommendForm() {
     const [values, setValues] = useState([]);
     const [isSubmit, setSubmit] = useState(false);
 
-    const { user } = useContext(UserContext);
+
+    if(!user)
+    {
+        return <Navigate to="/redirect" />;
+    }
+    else if(user.roleID != 3)
+    {
+        return <Navigate to="/redirect" />
+    }
 
     function resetForm() {
         setStaff(null);

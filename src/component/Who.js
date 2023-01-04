@@ -6,6 +6,7 @@ import { RecommendErrorContext } from "../page/RecommendForm";
 import { UserContext } from "./App";
 
 function Who({ staff, setStaff, ccTo, setCcTo, error}) {
+    // console.log("Who");
     const [whoSearchTerm, setWhoSearchTerm] = useState("");
     const [ccToSearchTerm, setCcToSearchTerm] = useState("");
     const [staffList, setStaffList] = useState([]);
@@ -21,11 +22,11 @@ function Who({ staff, setStaff, ccTo, setCcTo, error}) {
 
     useEffect(() => {
         const handler = (event) => {
-            if (!whoDivElement.current.contains(event.target)) {
+            if (whoDivElement.current && !whoDivElement.current.contains(event.target)) {
                 setExpandWho(false);
             }
 
-            if (!ccToDivElement.current.contains(event.target)) {
+            if (ccToDivElement.current && !ccToDivElement.current.contains(event.target)) {
                 setExpandCcTo(false);
             }
         };

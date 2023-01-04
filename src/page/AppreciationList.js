@@ -1,14 +1,16 @@
 import axios from "axios";
 import { apiURL } from "../config";
 import React, { useContext, useEffect, useState } from "react";
-import { UserContext } from "./App";
-import AdminAppreciationList from "./AdminAppreciationList";
-import StaffAppreciationList from "./StaffAppreciationList";
-import RecommenderAppreciationList from "./RecommenderAppreciationList";
-import ApproverAppreciationList from "./ApproverAppreciationList";
+import { UserContext } from "../component/App";
+import AdminAppreciationList from "../component/AdminAppreciationList";
+import StaffAppreciationList from "../component/StaffAppreciationList";
+import RecommenderAppreciationList from "../component/RecommenderAppreciationList";
+import ApproverAppreciationList from "../component/ApproverAppreciationList";
 import { Navigate } from "react-router-dom";
 
 function AppreciationList() {
+
+    // console.log("Appreciation List");
     const { user } = useContext(UserContext);
     const [appreciations, setAppreciations] = useState([]);
 

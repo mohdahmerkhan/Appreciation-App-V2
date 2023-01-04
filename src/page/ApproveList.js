@@ -1,10 +1,11 @@
 import axios from "axios";
 import React, { useContext, useEffect, useState } from "react";
-import { Navigate } from "react-router-dom";
 import { apiURL } from "../config";
-import { UserContext } from "./App";
+import { UserContext } from "../component/App";
+import { Navigate } from "react-router-dom";
 
 function ApproveList() {
+    // console.log("Approve List");
     const { user } = useContext(UserContext);
 
     const [pendingAppreciations, setPendingAppreciations] = useState([]);
@@ -12,8 +13,10 @@ function ApproveList() {
     let renderContent;
     const [listRenderTime, setListRenderTime] = useState(0);
 
+    
+
     useEffect(() => {
-        if (user) {
+        if (user && (user.roleID == 4)) {
             axios.get(apiURL + "api/appreciationsByApproval/" + user.email + "&" + user.roleID + "&false").then(
                 (response) => {
                     if (response.data == "") {
@@ -24,10 +27,17 @@ function ApproveList() {
                     }
                 }
             );
-
         }
-
     }, [listRenderTime,user]);
+
+    if(!user)
+    {
+        return <Navigate to="/login" />
+    }
+    else if(user.roleID != 4)
+    {
+        return <Navigate to="/home" />
+    }
 
 
     function approveAppreciation(apprID) {

@@ -8,6 +8,8 @@ import { apiURL } from "../config";
 import { dateFormat } from "../component/Utility/Utility";
 
 function Certificate() {
+
+    // console.log("Certificate");
     const { appreciationID } = useParams();
 
     const { user } = useContext(UserContext);
