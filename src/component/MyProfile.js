@@ -3,6 +3,26 @@ import { UserContext } from "./App";
 
 function MyProfile() {
     const { user } = useContext(UserContext);
+    let roleName = "";
+    switch(user.roleID)
+    {
+        case "1":
+        roleName = "Admin";
+        break;
+
+        case "2":
+        roleName = "Staff";
+        break;
+
+        case "3":
+        roleName = "Recommender";
+        break;
+
+        case "4":
+        roleName = "Approver";
+        break;
+    }
+
     return (
         <Fragment>
             <div className="detailName">
@@ -24,19 +44,19 @@ function MyProfile() {
                 <label>
                     Score
                 </label>
-                <input type="text" value="35 Points" disabled />
+                <input type="text" value={user.score+" point(s)"} disabled />
             </div>
             <div className="detailComponent">
                 <label>
-                    Phone No.
+                    Role
                 </label>
-                <input type="text" value="+91 9876543210" disabled />
+                <input type="text" value={roleName} disabled />
             </div>
             <div className="detailComponent">
                 <label>
-                    Location
+                    Company
                 </label>
-                <input type="text" value="Trivandrum, Kerala" disabled />
+                <input type="text" value="Nissan Digital India" disabled />
             </div>
         </Fragment>
     );

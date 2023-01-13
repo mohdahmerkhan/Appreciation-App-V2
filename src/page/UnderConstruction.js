@@ -1,6 +1,6 @@
 import React from "react";
 
-function PageNotFound() {
+function UnderConstruction({ pageName }) {
 
     // console.log("Page Not Found");
     
@@ -9,12 +9,10 @@ function PageNotFound() {
             <div className="text-center">
                 <div className="card-body">
                     <h3 className="card-title">
-                        <b>"Sorry Page Not Found !" </b>
+                    <b>"{ pageName + " Page"}"</b> - Under Construction
                     </h3>
                     <p className="card-text">
-                        Page Not Found (ERROR - 404)
-                        <br />
-                        Page you are looking for doesn't exist in our server
+                        This page is under construction and will be avaible soon
                     </p>
                 </div>
             </div>
@@ -22,4 +20,4 @@ function PageNotFound() {
     );
 }
 
-export default PageNotFound;
+export default UnderConstruction;

@@ -8,8 +8,8 @@ import MyBudgetReport from "../component/MyBudgetReport";
 import MyGreetings from "../component/MyGreetings";
 import MyInsights from "../component/MyInsights";
 import MyToDoList from "../component/MyToDoList";
-import profileImg from "../images/Profile.jpg";
 import SideNavItem from "./SideNavItem";
+import { apiURL } from "../config";
 
 export const SideNavContext = createContext();
 
@@ -30,7 +30,7 @@ function MyAccount() {
                 <div className="accountDetails">
                     <div className="leftContainer">
                         <div className="image">
-                            <img src={profileImg} alt="Profile Picture" />
+                            <img src={apiURL + "images/profile-picture/"+user.userID+".jpg"} alt="Profile Picture" />
                         </div>
                         <div className="accountHolderName">
                             {

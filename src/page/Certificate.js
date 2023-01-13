@@ -1,5 +1,4 @@
 import "./Certificate.css";
-import certificateLogo from "../images/CertificateLogo.png";
 import axios from "axios";
 import React, { Fragment, useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
@@ -29,8 +28,7 @@ function Certificate() {
 
     }, [user]);
 
-    function downloadCertificate()
-    {
+    function downloadCertificate() {
         alert("Download Under Construction");
     }
 
@@ -38,17 +36,18 @@ function Certificate() {
         (appreciation) ?
             (
                 <Fragment>
-                    <button className="btn btn-secondary downloadBtn" onClick={downloadCertificate}>
-                        Download
-                    </button>
+
                     <div id="mainContainer">
+                        <button className="btn btn-secondary downloadBtn" onClick={downloadCertificate}>
+                            Download
+                        </button>
                         <div className="mainContainer">
                             <div className="certNo">
                                 Certificate No. : {appreciation.apprID}
                             </div>
                             <div className="subContainer">
                                 <div className="logo">
-                                    <img src={certificateLogo} alt="Image Logo" />
+                                    <img src={apiURL + "images/CertificateLogo.png"} alt="Image Logo" />
                                 </div>
                                 <h2>
                                     CERTIFICATION OF APPRECIATION

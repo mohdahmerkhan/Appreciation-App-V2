@@ -2,9 +2,6 @@ import "./TemplateList.css";
 import React, { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import { apiURL } from "../config";
-import Template_1 from "../images/Template_1.bmp";
-import Template_2 from "../images/Template_2.bmp";
-import Template_3 from "../images/Template_3.bmp";
 import { RecommendErrorContext } from "../page/RecommendForm";
 
 function TemplateList({ template, setTemplate, error }) {
@@ -26,16 +23,16 @@ function TemplateList({ template, setTemplate, error }) {
     const renderTemplates = templateList.map(
         (templateItem) => {
 
-            let whichTemplate;
+            let whichTemplate = apiURL;
             switch (templateItem.templateID) {
                 case 1:
-                    whichTemplate = Template_1;
+                    whichTemplate += "images/templateImages/Template_1.bmp";
                     break;
                 case 2:
-                    whichTemplate = Template_2;
+                    whichTemplate += "images/templateImages/Template_2.bmp";
                     break;
                 case 3:
-                    whichTemplate = Template_3;
+                    whichTemplate += "images/templateImages/Template_3.bmp";
                     break;
             }
 

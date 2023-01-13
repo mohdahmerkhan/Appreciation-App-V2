@@ -52,6 +52,7 @@ function Login() {
                     localStorage.setItem("USERID", result.userID + "");
                     localStorage.setItem("ACCESS_ROLE", result.role.roleID + "");
                     localStorage.setItem("EMAIL", result.email + "");
+                    localStorage.setItem("SCORE",result.score + "");
 
                     //Logged In
                     alert("Log In Successfull");

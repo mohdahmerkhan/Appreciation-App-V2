@@ -28,7 +28,8 @@ function App() {
         userID: localStorage.getItem("USERID"),
         roleID: localStorage.getItem("ACCESS_ROLE"),
         email: localStorage.getItem("EMAIL"),
-        name: localStorage.getItem("NAME")
+        name: localStorage.getItem("NAME"),
+        score : localStorage.getItem("SCORE")
     }:null);
 
     const [user, setUser] = useState(loggedInUser);

@@ -109,10 +109,17 @@
 .companyLogo
 {
     float: left;
-    margin: 3px;
+    margin: 13px 0px;
     margin-right: 40px;
     color: rebeccapurple;
+    font-family: 'Frijole';
 }
+
+.companyLogo h1
+{
+    font-size: 170%;
+}
+
 .navBar
 {
     margin:0 5%;
@@ -148,8 +155,8 @@
 
 .contentContainer
 {
-    float: left;
     width: 100%;
+    max-width: 1330px;
     padding:27px 4%;
     margin: 9px auto;
     background-color: rgba(176, 174, 174, 0.475);
@@ -159,12 +166,13 @@
 
 .rightContainer
 {
-    margin: 6px 0%;
+    margin: 6px 1.5%;
     width: 25%;
     max-width: 350px;
     padding: 4px;
     border-radius: 4px;
-    float: right;
+    float: left;
+
 }
 
 .trendAds
@@ -210,8 +218,8 @@
 }
 .userPosition img
 {
-    height: 70px;
-    width: 70px;
+    height: 90px;
+    width: 101px;
     margin-top: 3px;
     border-radius: 50%;
     border:3px solid rebeccapurple;
@@ -233,6 +241,7 @@
     border-radius: 4px;
     text-align: center;
     width: 94%;
+    margin:0 auto;
     margin-bottom: 50px;
 }
 
@@ -349,7 +358,7 @@
 .image img {
     display: inline-block;
     margin-top: 30px;
-    width: 110px;
+    width: 120px;
     height: 110px;
     border-radius: 50%;
     border: 3px solid whitesmoke;
@@ -414,6 +423,13 @@
     padding: 19px 3%;
     border-radius: 4px;
     background-color: whitesmoke;
+}
+
+.header h3
+{
+    color: darkslategrey;
+    font-weight: bold;
+    padding: 13px 0%;
 }
 
 .detailName {

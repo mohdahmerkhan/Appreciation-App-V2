@@ -3,7 +3,6 @@ import React, { Fragment, useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { UserContext } from "../component/App";
 import { apiURL } from "../config";
-import ProfileImage from "../images/Profile.jpg";
 import Card from "../component/Card";
 import TimeAgo from "../component/TimeAgo";
 
@@ -26,7 +25,7 @@ function Home() {
         (appreciationItem, index) => {
             return (
                 <div className="timelineCard" key={appreciationItem.apprID}>
-                    <img src={ProfileImage} />
+                    <img src={apiURL + "/images/profile-picture/"+appreciationItem.user.userID+".jpg"} />
                     <div className="content">
                         {appreciationItem.user.fullName} <span style={{ color: "darkslategrey", fontSize: "medium" }}>was appreciated by</span> {appreciationItem.recommendBy.fullName}
                     </div>
@@ -89,7 +88,7 @@ function Home() {
                     <div className="leftContainer">
                         <div className="profileContainer">
                             <div className="image">
-                                <img src={ProfileImage} alt="Profile Picture" />
+                                <img src={apiURL + "/images/profile-picture/"+user.userID+".jpg"} alt="Profile Picture" />
                             </div>
                             <div className="accountHolderName">
                                 {user.name}
@@ -141,7 +140,7 @@ function Home() {
                                     &nbsp;
                                     <i className="fa-solid fa-award"></i>
                                     12
-                                    <img src={ProfileImage}/>
+                                    <img src={apiURL+"/images/profile-picture/"+user.userID+".jpg"}/>
                                     {user.name} (You)
                                 </div>
                                 <div className="listItem">
