@@ -4,6 +4,7 @@
     border-radius: 0px;
     padding: 0px;
     margin: 0 auto;
+    margin-top: 2%;
     height: 583px;
     width: 842px;
 }
@@ -136,7 +137,8 @@
     float:right;
     border-radius: 3px;
     padding: 6px;
-    margin-right: 20%;
+    margin-top: 2%;
+    margin-right: 21.5%;
     font-weight: bold;
     color: gray;
     background-color: whitesmoke;

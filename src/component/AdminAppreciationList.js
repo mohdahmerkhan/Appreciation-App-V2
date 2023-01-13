@@ -38,7 +38,7 @@ function AdminAppreciationList({ appreciations }) {
                 </h3>
             </div>
             <table className="table table-hover">
-                <thead className="table-dark">
+                <thead className="table-dark-custom">
                     <tr>
                         <th>Appr. ID</th>
                         <th>Title</th>

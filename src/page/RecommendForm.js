@@ -66,9 +66,9 @@ function RecommendForm() {
 
         console.log(appreciationDTO);
 
-        console.log(apiURL + 'api/appreciations',appreciationDTO);
+        console.log(apiURL + 'api/appreciation',appreciationDTO);
 
-        axios.post(apiURL + 'api/appreciations',appreciationDTO).then(
+        axios.post(apiURL + 'api/appreciation',appreciationDTO).then(
             (response) => 
             {
                 console.log(response);

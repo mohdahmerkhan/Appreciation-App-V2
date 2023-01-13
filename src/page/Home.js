@@ -23,7 +23,7 @@ function Home() {
 
 
     const renderTimelineCardList = appreciations.map(
-        (appreciationItem,index) => {
+        (appreciationItem, index) => {
             return (
                 <div className="timelineCard" key={appreciationItem.apprID}>
                     <img src={ProfileImage} />
@@ -63,28 +63,131 @@ function Home() {
 
     return (
         <Fragment>
-            <div className="content card my-5">
-                <div className="text-center">
-                    <div className="card-body">
-                        <h3 className="card-title">
-                            Welcome to Appreciation App
-                        </h3>
-                        <p className="card-text">Get the best Appreciation Service Here.{!user && " For availing the service please login"}</p>
-                        {
-                            !user
-                            &&
+            {
+                !user
+                &&
+                <div className="content card my-5">
+                    <div className="text-center">
+                        <div className="card-body">
+                            <h3 className="card-title">
+                                Welcome to Appreciation App
+                            </h3>
+                            <p className="card-text">Get the best Appreciation Service Here.{!user && " For availing the service please login"}</p>
                             <Link to="/login">
                                 <div className="navItem">
                                     Login
                                 </div>
                             </Link>
-                        }
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className="timelineCardList">
-                {user && renderTimelineCardList}
-            </div>
+            }
+            {
+                user
+                &&
+                <div className="contentContainer">
+                    <div className="leftContainer">
+                        <div className="profileContainer">
+                            <div className="image">
+                                <img src={ProfileImage} alt="Profile Picture" />
+                            </div>
+                            <div className="accountHolderName">
+                                {user.name}
+                            </div>
+                            <div className="departmentName">
+                                IB6 GA & B2E System
+                            </div>
+                            <div className="list">
+                                <div className="listItem">
+                                    <i className="fa-solid fa-award"></i>
+                                    Appreciations
+                                </div>
+                                <div className="listItem">
+                                    <i className="fa-solid fa-trophy"></i>
+                                    Awards
+                                </div>
+                                <div className="listItem">
+                                    <i className="fa-solid fa-gift"></i>
+                                    Greetings
+                                </div>
+                                <div className="listItem">
+                                    <i className="fa-solid fa-chart-line"></i>
+                                    Insights
+                                </div>
+                                <div className="listItem">
+                                    <i className="fa-solid fa-list-check"></i>
+                                    To-Do-List
+                                </div>
+                                <div className="listItem">
+                                    <i className="fa-solid fa-square-poll-horizontal"></i>
+                                    Budget Report
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="timelineCardList">
+                        {renderTimelineCardList}
+                    </div>
+                    <div className="rightContainer">
+                        <div className="trendAds">
+                            Trends & Advertisements
+                        </div>
+                        <div className="leaderboard">
+                            <div className="list">
+                                <div className="title">
+                                    Leader Board - Monthly
+                                </div>
+                                <div className="userPosition">
+                                    &nbsp;
+                                    <i className="fa-solid fa-award"></i>
+                                    12
+                                    <img src={ProfileImage}/>
+                                    {user.name} (You)
+                                </div>
+                                <div className="listItem">
+                                    &nbsp;
+                                    <i className="fa-solid fa-trophy"></i>
+                                    &nbsp;
+                                    1
+                                    &nbsp;
+                                    Howard
+                                </div>
+                                <div className="listItem">
+                                    &nbsp;
+                                    <i className="fa-solid fa-trophy"></i>
+                                    &nbsp;
+                                    2
+                                    &nbsp;
+                                    John
+                                </div>
+                                <div className="listItem">
+                                    &nbsp;
+                                    <i className="fa-solid fa-trophy"></i>
+                                    &nbsp;
+                                    3
+                                    &nbsp;
+                                    Emily
+                                </div>
+                                <div className="listItem">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;
+                                    4
+                                    &nbsp;
+                                    Alexander
+                                </div>
+                                <div className="listItem">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;
+                                    5
+                                    &nbsp;
+                                    Christine
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
         </Fragment>
 
     );

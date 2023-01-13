@@ -148,33 +148,34 @@
 
 .contentContainer
 {
-    margin-top: 20px;
-    padding:19px 1%;
     float: left;
-    width: 98%;
+    width: 100%;
+    padding:27px 4%;
+    margin: 9px auto;
     background-color: rgba(176, 174, 174, 0.475);
     box-shadow:  0px 1px 6px grey;
-    background-color: red;
+    display: flex;
 }
 
 .rightContainer
 {
-    width: 20%;
+    margin: 6px 0%;
+    width: 25%;
+    max-width: 350px;
     padding: 4px;
-    border-radius: 23px;
-    float: left;
+    border-radius: 4px;
+    float: right;
 }
 
 .trendAds
 {
     font-size: 25px;
-    min-height: 150px;
+    min-height: 200px;
     padding: 19px 3px;
-    border-radius: 19px;
-    margin:3px;
+    border-radius: 4px;
     margin-bottom: 15px;
     background-color: rebeccapurple;
-    border: 4px solid whitesmoke;
+    border: 6px solid whitesmoke;
     text-align: center;
     vertical-align: middle;
     color: whitesmoke;
@@ -182,7 +183,7 @@
 
 .leaderboard
 {
-    border-radius: 23px;
+    border-radius: 4px;
     padding: 3px;
     font-size: 14px;
     background-color: whitesmoke;
@@ -191,7 +192,6 @@
 
 .leaderboard .title
 {
-    /* background-color: red; */
     margin:3px 3%;
     margin-left: 20px;
     font-size: 15px;
@@ -206,8 +206,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: rgba(128, 128, 128, 0.252);
-    border-radius: 9px;
-    /* background-color: red; */
+    border-radius: 4px;
 }
 .userPosition img
 {
@@ -220,21 +219,20 @@
 
 .timelineCardList
 {
-    width: 45%;
-    min-width: 500px;
-    margin: 6px 1%;
-    border-radius: 23px;
-    margin: auto;
-    margin-top: 30px;
+    float: left;
+    width: 50%;
+    max-width: 600px;
+    margin: 0px auto;
+    padding: 9px 0%;
 }
 .timelineCard
 {
-    background-color: rgba(128, 128, 128, 0.089);
+    background-color: whitesmoke;
     padding: 3%;
     color: rebeccapurple;
-    border-radius: 23px;
+    border-radius: 4px;
     text-align: center;
-    margin: auto;
+    width: 94%;
     margin-bottom: 50px;
 }
 
@@ -244,7 +242,7 @@
     height: 90px;
     margin-top: -50px;
     border-radius: 50%;
-    border: 3px solid rebeccapurple;
+    border: 4px solid rebeccapurple;
 }
 
 .content
@@ -332,6 +330,7 @@
 
 .leftContainer {
     width: 21%;
+    max-width: 250px;
     height: 100%;
     margin: 9px 2%;
     padding: 9px 1%;
@@ -486,5 +485,12 @@
 
 footer
 {
-    display: none;
+    /* display: none; */
+}
+
+
+.table-dark-custom
+{
+    background-color: rebeccapurple;
+    color: whitesmoke;
 }

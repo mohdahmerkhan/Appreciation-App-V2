@@ -2,7 +2,7 @@ import React from "react";
 import { dateFormat } from "./Utility/Utility";
 
 function ApproverAppreciationList({ appreciations }) {
-    
+
     const renderTable = appreciations.map
         ((appreciation) => {
             return (
@@ -18,7 +18,7 @@ function ApproverAppreciationList({ appreciations }) {
                         {(appreciation.approved) ? appreciation.approvedBy.fullName : "------"}
                     </td>
                     <td>
-                        {(appreciation.approved) ? dateFormat(appreciation.date ): "------"}
+                        {(appreciation.approved) ? dateFormat(appreciation.date) : "------"}
                     </td>
                     <td>
                         {(appreciation.approved) ? (appreciation.active) ? "Approved" : "Rejected" : "Pending"}
@@ -38,7 +38,7 @@ function ApproverAppreciationList({ appreciations }) {
                 </h3>
             </div>
             <table className="table table-hover">
-                <thead className="table-dark">
+                <thead className="table-dark-custom">
                     <tr>
                         <th>Appr. ID</th>
                         <th>Title</th>

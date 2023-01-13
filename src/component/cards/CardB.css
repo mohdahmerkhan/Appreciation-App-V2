@@ -1,14 +1,9 @@
-/* * {
-    margin: 20px auto;
-} */
-
 .cardBContainer {
     margin: 20px auto;
     background-image: radial-gradient(whitesmoke, skyblue);
     text-align: center;
     font-family: sans-serif;
     color:darkslategrey;
-    margin: 0 auto;
     padding: 3px 1%;
     max-width: 800px;
 }
