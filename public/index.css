@@ -22,7 +22,6 @@
 
 .navContainer
 {
-    border:1px solid red;
     width: 100%;
     text-align: right;
     padding: 1%;
@@ -112,12 +111,13 @@
     margin: 13px 0px;
     margin-right: 40px;
     color: rebeccapurple;
-    font-family: 'Frijole';
+    /* font-family: 'Frijole'; */
 }
 
 .companyLogo h1
 {
     font-size: 170%;
+    font-weight: bolder;
 }
 
 .navBar
@@ -153,14 +153,20 @@
     background-color: rgba(239, 242, 245);
 }
 
+
+.homeWrapper
+{
+    background-color: rgba(176, 174, 174, 0.475);
+    padding-top: 20px;
+    margin-top: 6px;
+}
+
 .contentContainer
 {
     width: 100%;
     max-width: 1330px;
     padding:27px 4%;
     margin: 9px auto;
-    background-color: rgba(176, 174, 174, 0.475);
-    box-shadow:  0px 1px 6px grey;
     display: flex;
 }
 

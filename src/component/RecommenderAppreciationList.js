@@ -34,7 +34,7 @@ function RecommenderAppreciationList({ appreciations }) {
         <div className="container">
             <div className="header">
                 <h3>
-                    Admin View For Appreciation(s) List
+                    Recommender View For Appreciation(s) List
                 </h3>
             </div>
             <table className="table table-hover">

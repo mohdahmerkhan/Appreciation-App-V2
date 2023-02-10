@@ -64,7 +64,7 @@ function Header() {
                     <div className="float-left">
                         <div className="companyLogo">
                             <h1>
-                                Appreciation App
+                                Trail Blazers
                             </h1>
                         </div>
                         <div className="searchBarDiv">

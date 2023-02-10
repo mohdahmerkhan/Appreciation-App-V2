@@ -30,7 +30,7 @@ function MyAccount() {
                 <div className="accountDetails">
                     <div className="leftContainer">
                         <div className="image">
-                            <img src={apiURL + "images/profile-picture/"+user.userID+".jpg"} alt="Profile Picture" />
+                            <img src={apiURL + "images/profile-picture/"+user.userID+".jpg"} alt="Default Profile" />
                         </div>
                         <div className="accountHolderName">
                             {
@@ -53,13 +53,13 @@ function MyAccount() {
                         </div>
                     </div>
                     <div className="expandDetails">
-                        { (selectedAccNav == "My Profile") && <MyProfile />}
-                        { (selectedAccNav == "Appreciations") && <MyAppreciations />}
-                        { (selectedAccNav == "Awards") && <MyAwards />}
-                        { (selectedAccNav == "Greetings") && <MyGreetings />}
-                        { (selectedAccNav == "Insights") && <MyInsights />}
-                        { (selectedAccNav == "To Do List") && <MyToDoList />}
-                        { (selectedAccNav == "Budget Report") && <MyBudgetReport />}
+                        { (selectedAccNav === "My Profile") && <MyProfile />}
+                        { (selectedAccNav === "Appreciations") && <MyAppreciations />}
+                        { (selectedAccNav === "Awards") && <MyAwards />}
+                        { (selectedAccNav === "Greetings") && <MyGreetings />}
+                        { (selectedAccNav === "Insights") && <MyInsights />}
+                        { (selectedAccNav === "To Do List") && <MyToDoList />}
+                        { (selectedAccNav === "Budget Report") && <MyBudgetReport />}
                     </div>
                 </div>
             </div>

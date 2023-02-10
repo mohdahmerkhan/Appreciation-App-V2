@@ -25,7 +25,7 @@ function Home() {
         (appreciationItem, index) => {
             return (
                 <div className="timelineCard" key={appreciationItem.apprID}>
-                    <img src={apiURL + "/images/profile-picture/"+appreciationItem.user.userID+".jpg"} />
+                    <img src={apiURL + "/images/profile-picture/" + appreciationItem.user.userID + ".jpg"} />
                     <div className="content">
                         {appreciationItem.user.fullName} <span style={{ color: "darkslategrey", fontSize: "medium" }}>was appreciated by</span> {appreciationItem.recommendBy.fullName}
                     </div>
@@ -84,104 +84,105 @@ function Home() {
             {
                 user
                 &&
-                <div className="contentContainer">
-                    <div className="leftContainer">
-                        <div className="profileContainer">
-                            <div className="image">
-                                <img src={apiURL + "/images/profile-picture/"+user.userID+".jpg"} alt="Profile Picture" />
-                            </div>
-                            <div className="accountHolderName">
-                                {user.name}
-                            </div>
-                            <div className="departmentName">
-                                IB6 GA & B2E System
-                            </div>
-                            <div className="list">
-                                <div className="listItem">
-                                    <i className="fa-solid fa-award"></i>
-                                    Appreciations
+                <div className="homeWrapper">
+                    <div className="contentContainer">
+                        <div className="leftContainer">
+                            <div className="profileContainer">
+                                <div className="image">
+                                    <img src={apiURL + "/images/profile-picture/" + user.userID + ".jpg"} alt="Profile Picture" />
                                 </div>
-                                <div className="listItem">
-                                    <i className="fa-solid fa-trophy"></i>
-                                    Awards
+                                <div className="accountHolderName">
+                                    {user.name}
                                 </div>
-                                <div className="listItem">
-                                    <i className="fa-solid fa-gift"></i>
-                                    Greetings
+                                <div className="departmentName">
+                                    IB6 GA & B2E System
                                 </div>
-                                <div className="listItem">
-                                    <i className="fa-solid fa-chart-line"></i>
-                                    Insights
-                                </div>
-                                <div className="listItem">
-                                    <i className="fa-solid fa-list-check"></i>
-                                    To-Do-List
-                                </div>
-                                <div className="listItem">
-                                    <i className="fa-solid fa-square-poll-horizontal"></i>
-                                    Budget Report
+                                <div className="list">
+                                    <div className="listItem">
+                                        <i className="fa-solid fa-award"></i>
+                                        Appreciations
+                                    </div>
+                                    <div className="listItem">
+                                        <i className="fa-solid fa-trophy"></i>
+                                        Awards
+                                    </div>
+                                    <div className="listItem">
+                                        <i className="fa-solid fa-gift"></i>
+                                        Greetings
+                                    </div>
+                                    <div className="listItem">
+                                        <i className="fa-solid fa-chart-line"></i>
+                                        Insights
+                                    </div>
+                                    <div className="listItem">
+                                        <i className="fa-solid fa-list-check"></i>
+                                        To-Do-List
+                                    </div>
+                                    <div className="listItem">
+                                        <i className="fa-solid fa-square-poll-horizontal"></i>
+                                        Budget Report
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="timelineCardList">
-                        {renderTimelineCardList}
-                    </div>
-                    <div className="rightContainer">
-                        <div className="trendAds">
-                            Trends & Advertisements
+                        <div className="timelineCardList">
+                            {renderTimelineCardList}
                         </div>
-                        <div className="leaderboard">
-                            <div className="list">
-                                <div className="title">
-                                    Leader Board - Monthly
+                        <div className="rightContainer">
+                            <div className="trendAds">
+                                Trends & Advertisements
+                            </div>
+                            <div className="leaderboard">
+                                <div className="list">
+                                    <div className="title">
+                                        Leader Board - Monthly
+                                    </div>
+                                    <div className="userPosition">
+                                        &nbsp;
+                                        <i className="fa-solid fa-award"></i>
+                                        12
+                                        <img src={apiURL + "/images/profile-picture/" + user.userID + ".jpg"} />
+                                        {user.name} (You)
+                                    </div>
+                                    <div className="listItem">
+                                        &nbsp;
+                                        <i className="fa-solid fa-trophy"></i>
+                                        &nbsp;
+                                        1
+                                        &nbsp;
+                                        Howard
+                                    </div>
+                                    <div className="listItem">
+                                        &nbsp;
+                                        <i className="fa-solid fa-trophy"></i>
+                                        &nbsp;
+                                        2
+                                        &nbsp;
+                                        John
+                                    </div>
+                                    <div className="listItem">
+                                        &nbsp;
+                                        <i className="fa-solid fa-trophy"></i>
+                                        &nbsp;
+                                        3
+                                        &nbsp;
+                                        Emily
+                                    </div>
+                                    <div className="listItem">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;
+                                        4
+                                        &nbsp;
+                                        Alexander
+                                    </div>
+                                    <div className="listItem">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;
+                                        5
+                                        &nbsp;
+                                        Christine
+                                    </div>
                                 </div>
-                                <div className="userPosition">
-                                    &nbsp;
-                                    <i className="fa-solid fa-award"></i>
-                                    12
-                                    <img src={apiURL+"/images/profile-picture/"+user.userID+".jpg"}/>
-                                    {user.name} (You)
-                                </div>
-                                <div className="listItem">
-                                    &nbsp;
-                                    <i className="fa-solid fa-trophy"></i>
-                                    &nbsp;
-                                    1
-                                    &nbsp;
-                                    Howard
-                                </div>
-                                <div className="listItem">
-                                    &nbsp;
-                                    <i className="fa-solid fa-trophy"></i>
-                                    &nbsp;
-                                    2
-                                    &nbsp;
-                                    John
-                                </div>
-                                <div className="listItem">
-                                    &nbsp;
-                                    <i className="fa-solid fa-trophy"></i>
-                                    &nbsp;
-                                    3
-                                    &nbsp;
-                                    Emily
-                                </div>
-                                <div className="listItem">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;
-                                    &nbsp;&nbsp;
-                                    4
-                                    &nbsp;
-                                    Alexander
-                                </div>
-                                <div className="listItem">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;
-                                    &nbsp;&nbsp;
-                                    5
-                                    &nbsp;
-                                    Christine
-                                </div>
-
                             </div>
                         </div>
                     </div>
