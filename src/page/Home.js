@@ -5,6 +5,7 @@ import { UserContext } from "../component/App";
 import { apiURL } from "../config";
 import Card from "../component/Card";
 import TimeAgo from "../component/TimeAgo";
+import Like from "../component/Like";
 
 function Home() {
     // console.log("Home");
@@ -14,7 +15,6 @@ function Home() {
     useEffect(() => {
         axios.get(apiURL + "api/appreciations").then(
             (response) => {
-                // console.log(response.data);
                 setAppreciations(response.data)
             }
         );
@@ -25,7 +25,7 @@ function Home() {
         (appreciationItem, index) => {
             return (
                 <div className="timelineCard" key={appreciationItem.apprID}>
-                    <img src={apiURL + "/images/profile-picture/" + appreciationItem.user.userID + ".jpg"} />
+                    <img src={apiURL + "images/profile-picture/" + appreciationItem.user.userID + ".jpg"} />
                     <div className="content">
                         {appreciationItem.user.fullName} <span style={{ color: "darkslategrey", fontSize: "medium" }}>was appreciated by</span> {appreciationItem.recommendBy.fullName}
                     </div>
@@ -39,16 +39,12 @@ function Home() {
                         #Cheers #Thank You
                     </div>
                     <div className="respondList">
-                        <span className="respond">
-                            <i className="fa-regular fa-thumbs-up"></i>
-                            &nbsp;
-                            Like
-                        </span>
-                        <span className="respond">
+                        <Like apprID={appreciationItem.apprID} />
+                        <Link className="respond" to={"appreciation/" + appreciationItem.apprID}>
                             <i className="fa-regular fa-comment"></i>
                             &nbsp;
                             Comment
-                        </span>
+                        </Link>
                         <span className="respond">
                             <i className="fa-solid fa-share"></i>
                             &nbsp;
@@ -89,7 +85,7 @@ function Home() {
                         <div className="leftContainer">
                             <div className="profileContainer">
                                 <div className="image">
-                                    <img src={apiURL + "/images/profile-picture/" + user.userID + ".jpg"} alt="Profile Picture" />
+                                    <img src={apiURL + "images/profile-picture/" + user.userID + ".jpg"} alt="Profile Picture" />
                                 </div>
                                 <div className="accountHolderName">
                                     {user.name}

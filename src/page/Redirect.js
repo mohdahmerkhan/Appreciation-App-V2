@@ -9,7 +9,7 @@ function Redirect() {
     
     if (!user) {
         console.log("Going to Login");
-        return <Navigate to="/login" />
+        return <Navigate to="/login" />;
     }
     else
     {

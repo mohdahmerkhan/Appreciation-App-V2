@@ -11,8 +11,7 @@ function Header() {
     const [selectedNav, setSelectedNav] = useState("");
 
     // console.log(window.location.pathname);
-    useEffect(() => 
-    {
+    useEffect(() => {
         if (window.location.pathname.slice(1) == "") {
             setSelectedNav("home");
         }
@@ -78,22 +77,22 @@ function Header() {
                             &&
                             <Fragment>
                                 <Link to="/wishList">
-                                    <div className={(selectedNav == "wishList")?"navIcons selectedNavIcon":"navIcons"} onClick={() => setSelectedNav("wishList")}>
+                                    <div className={(selectedNav == "wishList") ? "navIcons selectedNavIcon" : "navIcons"} onClick={() => setSelectedNav("wishList")}>
                                         <i className="fa-regular fa-heart"></i>
                                     </div>
                                 </Link>
                                 <Link to="/cart">
-                                    <div className={(selectedNav == "cart")?"navIcons selectedNavIcon":"navIcons"} onClick={() => setSelectedNav("cart")}>
+                                    <div className={(selectedNav == "cart") ? "navIcons selectedNavIcon" : "navIcons"} onClick={() => setSelectedNav("cart")}>
                                         <i className='fas fa-shopping-cart'></i>
                                     </div>
                                 </Link>
                                 <Link to="/notifications">
-                                    <div className={(selectedNav == "notifications")?"navIcons selectedNavIcon":"navIcons"} onClick={() => setSelectedNav("notifications")}>
+                                    <div className={(selectedNav == "notifications") ? "navIcons selectedNavIcon" : "navIcons"} onClick={() => setSelectedNav("notifications")}>
                                         <i className='far fa-bell'></i>
                                     </div>
                                 </Link>
                                 <Link to="/myAccount">
-                                    <div className={(selectedNav == "myAccount")?"navProfileIcon selectedNavProfileIcon":"navProfileIcon"} onClick={() => setSelectedNav("myAccount")}>
+                                    <div className={(selectedNav == "myAccount") ? "navProfileIcon selectedNavProfileIcon" : "navProfileIcon"} onClick={() => setSelectedNav("myAccount")}>
                                         {user.name}
                                         &nbsp;
                                         <i className='fas fa-user-circle'></i>

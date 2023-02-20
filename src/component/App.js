@@ -17,6 +17,7 @@ import Cart from "../page/Cart";
 import MyAccount from "../page/MyAccount";
 import Notification from "../page/Notification";
 import WishList from "../page/WishList";
+import Post from "../page/Post";
 
 export const UserContext = createContext();
 
@@ -62,8 +63,11 @@ function App() {
                         <Route path="appreciationList" element={<AppreciationList />} />
                         <Route path="recommend" element={<RecommendForm />} />
                         <Route path="approve" element={<ApproveList />} />
-                        <Route path="appreciationList/certificate/:appreciationID" element={<Certificate appreciationID2={-1} />} />
+                        <Route path="appreciationList/certificate/:appreciationID" element={<Certificate />} />
                         <Route path="appreciationList/card/:appreciationID" element={<CardPage />} />
+                        <Route path="appreciationList/card/:appreciationID" element={<CardPage />} />
+                        <Route path="home/appreciation/:apprID" element={<Post />} />
+                        <Route path="appreciation/:apprID" element={<Post />} />
                         <Route path="*" element={<PageNotFound />} />
                     </Routes>
                 </BrowserRouter>

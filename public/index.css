@@ -309,9 +309,11 @@
     color: rgba(47, 79, 79, 0.742);
     padding: 9px;
     border-radius:4px;
+    text-decoration: none;
 }
 .respond:hover
 {
+    color: rgba(47, 79, 79, 0.742);
     cursor: pointer;
     background-color: rgba(128, 128, 128, 0.159);
 }
@@ -503,6 +505,119 @@
         display: block;
         font-size: 19px;
     }
+}
+
+.commentList {
+    /* background-color: red; */
+    padding-right: 30px;
+    font-size: 80%;
+    padding: 3%;
+    width: 100%;
+    margin:0 auto;
+    margin-top: -50px;
+}
+
+.commentList .commentContainer {
+    margin: 5px auto;
+    max-width: 700px;
+    width: 100%;
+}
+
+.commentList .profileImg {
+    float: left;
+    margin-top: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+.commentList .profileImg img {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.commentList .comment {
+    margin-left: 60px;
+    padding: 6px 2%;
+    border-radius: 4px;
+    background-color: whitesmoke;
+}
+
+.commentList .comment:hover .replyIcon {
+    visibility: visible;
+}
+
+.commentList .replyIcon:hover {
+    color: lightslategray;
+    cursor: pointer;
+}
+
+.commentList .replyIcon {
+    visibility: hidden;
+    float: right;
+    margin: 5% 9px;
+    color: rgba(119, 136, 153, 0.338);
+}
+
+.commentList .replyComment {
+    margin-left: 6%;
+    /* min-width: 300px; */
+    box-sizing: border-box;
+}
+
+.commentList .commentOwner {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.commentList .timeAgo {
+    color: rgba(47, 79, 79, 0.6);
+    font-size: 12px;
+    margin-top: 1px;
+    margin-bottom: 3px;
+}
+
+.commentList .commentMessage {
+    color: darkslategrey;
+    /* margin-top: 6px; */
+}
+
+.commentList .replyInput {
+    margin: 6px 0px;
+}
+
+.commentList .replyInput input {
+    border: 1px solid rgba(128, 128, 128, 0.208);
+    border-radius: 4px;
+    width: 80%;
+    padding: 9px;
+}
+
+.commentList .replySend {
+    padding: 9px 3px;
+    margin: 3px;
+    border: 1px solid rgba(128, 128, 128, 0.313);
+    border-radius: 4px;
+    min-width: 50px;
+}
+
+.commentList .replySend i{
+    color: lightslategray;
+}
+
+.commentList .replySend:hover {
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.258);
+}
+
+.commentList .replySend:hover i{
+    color: darkslategrey;
+}
+
+.disable
+{
+    display: none;
 }
 
 footer
